@@ -1,0 +1,109 @@
+body{
+    background: lightgreen;
+    height: 3000px;
+    width: 3000px;
+}
+
+div {
+    height: 200px;
+    width: 50px;
+    margin: 10px;
+}
+
+.bar-right {
+    background: white;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    transform: skew(25deg);
+    /*transform: rotate(90deg);
+    /*position: static; - Elements show up underneath previous elements*/
+}
+
+.bar-center {
+    background: lightslategray;
+    position: absolute;
+    top: 144px;
+    left: 223px;
+    height: 50px;
+    width: 100px;
+    z-index: -1;
+}
+
+.bar-left {
+    position: absolute;
+    background: powderblue;
+    top: 50px;
+    left: 207px;
+    transform: skew(-25deg);
+    z-index: 1;
+}
+
+#container {
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    top: 100px;
+    border-style: solid;
+    border-color: aqua;
+    border-width: 10px;
+}
+
+.flower-center {
+    height: 300px;
+    width: 300px;
+    background: purple;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    border-radius: 50%;
+    animation-name: anim;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+.petal {
+    height: 100px;
+    width: 100px;
+    background: pink;
+    position: absolute;
+    top: 500px;
+    left: 500px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+#petal-1 {
+    top: 609px;
+    left: 384px;
+}
+
+#petal-2 {
+    top: 818px;
+    left: 593px;
+}
+
+#petal-3 {
+    top: 468px;
+    left: 779px;
+}
+
+#petal-4 {
+    top: 385px;
+    left: 593px;
+}
+
+#petal-5 {
+    top: 616px;
+    left: 819px;
+}
+
+
+@keyframes anim {
+    0% {
+        background: blue;
+    }
+    50% {
+        background: orangered;
+        left: 1000px;
+    }
+}
